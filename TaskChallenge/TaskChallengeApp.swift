@@ -11,7 +11,8 @@ import SwiftUI
 struct TaskChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            Kadai001View()
         }
     }
 }
