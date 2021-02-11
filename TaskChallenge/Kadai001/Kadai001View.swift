@@ -19,42 +19,12 @@ struct Kadai001View: View {
 
     var body: some View {
         VStack {
-            TextField("", text: $text1)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 5)
-                        .stroke(Color.blue, lineWidth: 1)
-                )
-                .padding()
-                
-            TextField("", text: $text2)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 5)
-                        .stroke(Color.blue, lineWidth: 1)
-                )
-                .padding()
+            InputView(text: $text1)
+            InputView(text: $text2)
+            InputView(text: $text3)
+            InputView(text: $text4)
+            InputView(text: $text5)
 
-            TextField("", text: $text3)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 5)
-                        .stroke(Color.blue, lineWidth: 1)
-                )
-                .padding()
-
-            TextField("", text: $text4)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 5)
-                        .stroke(Color.blue, lineWidth: 1)
-                )
-                .padding()
-
-            TextField("", text: $text5)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 5)
-                        .stroke(Color.blue, lineWidth: 1)
-                )
-                .padding()
-
-            
             Text(result)
             
             Button(action: {
@@ -67,15 +37,25 @@ struct Kadai001View: View {
                 
                 let total = num1 + num2 + num3 + num4 + num5
                 self.result = String(total)
-
-                
             }) {
                 Text("計算")
             }.padding()
 
-
             Spacer()
         }
+    }
+}
+
+struct InputView: View {
+    @Binding var text: String
+
+    var body: some View {
+        TextField("", text: $text)
+            .overlay(
+                RoundedRectangle(cornerRadius: 5)
+                    .stroke(Color.blue, lineWidth: 1)
+            )
+            .padding()
     }
 }
 
