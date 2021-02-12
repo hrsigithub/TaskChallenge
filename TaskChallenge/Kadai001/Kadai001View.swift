@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct Kadai001View: View {
-    
+
     @State private var textArray: [String]
         = Array<String>(repeating: "", count: 5)
-    
-    @State private var result = ""
+
+   @State private var result = ""
 
     var body: some View {
         HStack {
             VStack {
-                VStack(spacing: 20.0){
+                VStack(spacing: 20.0) {
                     InputView(text: $textArray[0])
                     InputView(text: $textArray[1])
                     InputView(text: $textArray[2])
@@ -25,7 +25,6 @@ struct Kadai001View: View {
                     InputView(text: $textArray[4])
 
 //                    Text(result)
-                    
                     Button(action: {
                         // 計算
                         let num1 = Int(textArray[0]) ?? 0
@@ -33,10 +32,10 @@ struct Kadai001View: View {
                         let num3 = Int(textArray[2]) ?? 0
                         let num4 = Int(textArray[3]) ?? 0
                         let num5 = Int(textArray[4]) ?? 0
-                        
+
                         let total = num1 + num2 + num3 + num4 + num5
-                        self.result = String(total)
-                        
+                        result = String(total)
+
                         UIApplication.shared.closeKeyboard()
                     }) {
                         Text("計算")
