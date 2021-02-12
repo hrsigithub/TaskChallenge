@@ -12,7 +12,7 @@ struct Kadai001View: View {
     @State private var textArray: [String]
         = Array<String>(repeating: "", count: 5)
 
-   @State private var result = ""
+    @State private var result = ""
 
     var body: some View {
         HStack {
@@ -53,19 +53,7 @@ struct Kadai001View: View {
     }
 }
 
-struct InputView: View {
-    @Binding var text: String
 
-    var body: some View {
-        TextField("", text: $text)
-            .overlay(
-                RoundedRectangle(cornerRadius: 5)
-//                    .stroke(Color.blue, lineWidth: 1)
-                    .stroke(Color.black.opacity(0.5), lineWidth: 1)
-            )
-//            .padding()
-    }
-}
 
 struct Kadai001View_Previews: PreviewProvider {
     static var previews: some View {
@@ -78,4 +66,3 @@ extension UIApplication {
         sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
-

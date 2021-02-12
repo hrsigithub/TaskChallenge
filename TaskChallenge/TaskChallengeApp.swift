@@ -12,7 +12,8 @@ struct TaskChallengeApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            Kadai001View()
+//            Kadai001View()
+            Kadai002View()
         }
     }
 }

@@ -12,6 +12,8 @@
 		6942BB8825D0D4590022C224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6942BB8725D0D4590022C224 /* Assets.xcassets */; };
 		6942BB8B25D0D4590022C224 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6942BB8A25D0D4590022C224 /* Preview Assets.xcassets */; };
 		6942BB9525D0D49F0022C224 /* Kadai001View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6942BB9425D0D49F0022C224 /* Kadai001View.swift */; };
+		698C30D625D6372800D34462 /* Kadai002View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C30D525D6372800D34462 /* Kadai002View.swift */; };
+		698C30D925D6397B00D34462 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C30D825D6397B00D34462 /* InputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		6942BB8A25D0D4590022C224 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6942BB8C25D0D4590022C224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6942BB9425D0D49F0022C224 /* Kadai001View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai001View.swift; sourceTree = "<group>"; };
+		698C30D525D6372800D34462 /* Kadai002View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai002View.swift; sourceTree = "<group>"; };
+		698C30D825D6397B00D34462 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				6942BB9325D0D47A0022C224 /* Kadai001 */,
+				6982CB8525D623F300614C5B /* Kadai002 */,
 				6942BB8325D0D4570022C224 /* TaskChallengeApp.swift */,
 				6942BB8525D0D4570022C224 /* ContentView.swift */,
 				6942BB8725D0D4590022C224 /* Assets.xcassets */,
@@ -76,8 +81,17 @@
 			isa = PBXGroup;
 			children = (
 				6942BB9425D0D49F0022C224 /* Kadai001View.swift */,
+				698C30D825D6397B00D34462 /* InputView.swift */,
 			);
 			path = Kadai001;
+			sourceTree = "<group>";
+		};
+		6982CB8525D623F300614C5B /* Kadai002 */ = {
+			isa = PBXGroup;
+			children = (
+				698C30D525D6372800D34462 /* Kadai002View.swift */,
+			);
+			path = Kadai002;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698C30D625D6372800D34462 /* Kadai002View.swift in Sources */,
 				6942BB8625D0D4570022C224 /* ContentView.swift in Sources */,
+				698C30D925D6397B00D34462 /* InputView.swift in Sources */,
 				6942BB9525D0D49F0022C224 /* Kadai001View.swift in Sources */,
 				6942BB8425D0D4570022C224 /* TaskChallengeApp.swift in Sources */,
 			);
