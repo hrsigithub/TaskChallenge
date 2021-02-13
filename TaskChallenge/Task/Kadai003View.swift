@@ -38,24 +38,6 @@ struct Kadai003View: View {
                 Text("-")
             }
 
-            //            Button(action: {
-            //                // 計算
-            //                let num1 = Int(textArray[0]) ?? 0
-            //                let num2 = Int(textArray[1]) ?? 0
-            //
-            //                leftNum = String(flagLeft ? num1  * -1 : num1)
-            //                rightNum = String(flagRight ? num2  * -1 : num2)
-            //
-            //                let resultNum1 = Int(leftNum) ?? 0
-            //                let resultNum2 = Int(rightNum) ?? 0
-            //
-            //                result = String(resultNum1 + resultNum2)
-            //
-            //                UIApplication.shared.closeKeyboard()
-            //            }) {
-            //                Text("計算")
-            //            }.padding()
-
             Button("計算") {
                 // 計算
                 let num1 = Int(textArray[0]) ?? 0

@@ -28,7 +28,7 @@ struct Kadai002View: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
 
-                Button(action: {
+                Button("計算") {
                     // 計算
                     let num1 = Int(textArray[0]) ?? 0
                     let num2 = Int(textArray[1]) ?? 0
@@ -41,7 +41,7 @@ struct Kadai002View: View {
                     case 2:
                         result = String(num1 * num2)
                     case 3:
-                        if (num2 == 0) {
+                        if num2 == 0 {
                             result = "0で割ることはできません。"
                             break
                         }
@@ -50,9 +50,7 @@ struct Kadai002View: View {
                         result = ""
                     }
                     UIApplication.shared.closeKeyboard()
-                }) {
-                    Text("計算")
-                }
+                }.padding()
 
                 HStack {
                     Text(result)

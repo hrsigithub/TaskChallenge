@@ -23,7 +23,7 @@ struct Kadai001View: View {
                     InputView(text: $textArray[3])
                     InputView(text: $textArray[4])
 
-                    Button(action: {
+                    Button("計算") {
                         // 計算
                         let num1 = Int(textArray[0]) ?? 0
                         let num2 = Int(textArray[1]) ?? 0
@@ -35,10 +35,8 @@ struct Kadai001View: View {
                         result = String(total)
 
                         UIApplication.shared.closeKeyboard()
-                    })
-                    {
-                        Text("計算")
                     }.padding()
+
                     HStack {
                         Text(result)
                    }

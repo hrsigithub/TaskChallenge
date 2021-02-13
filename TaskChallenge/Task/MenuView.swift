@@ -11,10 +11,34 @@ struct MenuView: View {
 
     var body: some View {
         NavigationView {
-//            NavigationLink("課題１", destination: Kadai001View())
-//            NavigationLink("課題２", destination: Kadai002View())
-//            NavigationLink("課題３", destination: Kadai003View())
-            NavigationLink("課題４", destination: Kadai004View())
+            List(1..<5) { index in
+                NavigationLink(destination: GetView(index: index)) {
+                    Text("課題\(index)")
+                }
+            }
+            .navigationTitle("課題チャレンジ")
+        }
+    }
+}
+
+struct GetView: View {
+
+    var index: Int = 0
+
+    var body: some View {
+
+        switch index {
+        case 1:
+            Kadai001View()
+        case 2:
+            Kadai002View()
+        case 3:
+            Kadai003View()
+        case 4:
+            Kadai004View()
+        default:
+            Kadai001View()
+
         }
     }
 }
