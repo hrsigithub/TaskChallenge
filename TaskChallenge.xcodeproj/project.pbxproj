@@ -14,6 +14,7 @@
 		6942BB9525D0D49F0022C224 /* Kadai001View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6942BB9425D0D49F0022C224 /* Kadai001View.swift */; };
 		698C30D625D6372800D34462 /* Kadai002View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C30D525D6372800D34462 /* Kadai002View.swift */; };
 		698C30D925D6397B00D34462 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C30D825D6397B00D34462 /* InputView.swift */; };
+		69AEAAAE25D755BC0020F079 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AEAAAD25D755BC0020F079 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6942BB9425D0D49F0022C224 /* Kadai001View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai001View.swift; sourceTree = "<group>"; };
 		698C30D525D6372800D34462 /* Kadai002View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai002View.swift; sourceTree = "<group>"; };
 		698C30D825D6397B00D34462 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		69AEAAAD25D755BC0020F079 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,7 @@
 		6942BB8225D0D4570022C224 /* TaskChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				6942BB9325D0D47A0022C224 /* Kadai001 */,
-				6982CB8525D623F300614C5B /* Kadai002 */,
+				69AEAAAC25D755250020F079 /* Task */,
 				6942BB8325D0D4570022C224 /* TaskChallengeApp.swift */,
 				6942BB8525D0D4570022C224 /* ContentView.swift */,
 				6942BB8725D0D4590022C224 /* Assets.xcassets */,
@@ -77,21 +78,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		6942BB9325D0D47A0022C224 /* Kadai001 */ = {
+		69AEAAAC25D755250020F079 /* Task */ = {
 			isa = PBXGroup;
 			children = (
-				6942BB9425D0D49F0022C224 /* Kadai001View.swift */,
 				698C30D825D6397B00D34462 /* InputView.swift */,
-			);
-			path = Kadai001;
-			sourceTree = "<group>";
-		};
-		6982CB8525D623F300614C5B /* Kadai002 */ = {
-			isa = PBXGroup;
-			children = (
+				6942BB9425D0D49F0022C224 /* Kadai001View.swift */,
 				698C30D525D6372800D34462 /* Kadai002View.swift */,
+				69AEAAAD25D755BC0020F079 /* MenuView.swift */,
 			);
-			path = Kadai002;
+			path = Task;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				698C30D625D6372800D34462 /* Kadai002View.swift in Sources */,
+				69AEAAAE25D755BC0020F079 /* MenuView.swift in Sources */,
 				6942BB8625D0D4570022C224 /* ContentView.swift in Sources */,
 				698C30D925D6397B00D34462 /* InputView.swift in Sources */,
 				6942BB9525D0D49F0022C224 /* Kadai001View.swift in Sources */,

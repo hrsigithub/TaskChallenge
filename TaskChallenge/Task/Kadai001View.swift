@@ -37,7 +37,8 @@ struct Kadai001View: View {
                         result = String(total)
 
                         UIApplication.shared.closeKeyboard()
-                    }) {
+                    })
+                    {
                         Text("計算")
                     }.padding()
                     HStack {
@@ -52,8 +53,6 @@ struct Kadai001View: View {
         .padding(.leading, 20.0)
     }
 }
-
-
 
 struct Kadai001View_Previews: PreviewProvider {
     static var previews: some View {
