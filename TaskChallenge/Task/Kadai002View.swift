@@ -43,9 +43,9 @@ struct Kadai002View: View {
                     case 3:
                         if num2 == 0 {
                             result = "0で割ることはできません。"
-                            break
+                        } else {
+                            result = String(num1 / num2)
                         }
-                        result = String(num1 / num2)
                     default:
                         result = ""
                     }
