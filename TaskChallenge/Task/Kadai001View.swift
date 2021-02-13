@@ -24,7 +24,6 @@ struct Kadai001View: View {
                     InputView(text: $textArray[3])
                     InputView(text: $textArray[4])
 
-//                    Text(result)
                     Button(action: {
                         // 計算
                         let num1 = Int(textArray[0]) ?? 0
