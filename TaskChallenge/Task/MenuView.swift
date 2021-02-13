@@ -13,7 +13,8 @@ struct MenuView: View {
         NavigationView {
 //            NavigationLink("課題１", destination: Kadai001View())
 //            NavigationLink("課題２", destination: Kadai002View())
-            NavigationLink("課題３", destination: Kadai003View())
+//            NavigationLink("課題３", destination: Kadai003View())
+            NavigationLink("課題４", destination: Kadai004View())
         }
     }
 }
