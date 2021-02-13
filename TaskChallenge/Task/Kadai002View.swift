@@ -9,8 +9,7 @@ import SwiftUI
 
 struct Kadai002View: View {
 
-    @State private var textArray: [String]
-        = Array<String>(repeating: "", count: 2)
+    @State private var textArray = Array(repeating: "", count: 2)
 
     @State private var selection = 0
     @State private var result = ""
@@ -53,10 +52,11 @@ struct Kadai002View: View {
                     UIApplication.shared.closeKeyboard()
                 }) {
                     Text("計算")
-                }.padding()
+                }
+
                 HStack {
                     Text(result)
-               }
+                }
 
             }
             Spacer()

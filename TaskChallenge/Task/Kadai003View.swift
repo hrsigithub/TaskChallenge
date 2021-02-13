@@ -9,8 +9,7 @@ import SwiftUI
 
 struct Kadai003View: View {
 
-    @State private var textArray: [String]
-        = Array<String>(repeating: "", count: 2)
+    @State private var textArray = Array(repeating: "", count: 2)
 
     @State private var flagLeft = true
     @State private var flagRight = true
