@@ -9,22 +9,19 @@ import SwiftUI
 
 struct Kadai004View: View {
 
-    @State private var result = "0"
+    @State private var count = 0
 
     var body: some View {
         VStack {
-            Text(result)
+            Text(String(count))
                 .padding()
 
             Button("+") {
-                var num = Int(result) ?? 0
-                num += 1
-
-                result = String(num)
+                count += 1
             }.padding()
 
             Button("clear") {
-                result = "0"
+                count = 0
             }
 
             Spacer()
