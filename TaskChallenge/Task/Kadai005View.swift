@@ -50,7 +50,7 @@ struct Kadai005View: View {
             }.padding()
 
             HStack {
-                Text(String(format: "%.5f", result ?? 0))
+                Text(String(result ?? 0))
             }
 
             Spacer()
