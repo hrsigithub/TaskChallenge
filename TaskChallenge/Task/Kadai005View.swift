@@ -35,6 +35,7 @@ struct Kadai005View: View {
                         errorMessage = "割る数を入力してください。"
                         return
                     }
+
                     if num2 == 0 {
                         isAlert = true
                         errorMessage = "割る数には0を入力しないでください。"
@@ -50,13 +51,21 @@ struct Kadai005View: View {
             }.padding()
 
             HStack {
-                Text(String(result ?? 0))
+                // ここで NumberFormatter使用できないのでメソッド化した。
+                Text(format(result ?? 0))
             }
 
             Spacer()
         }
     }
-}
+
+    private func format(_ value: Float) -> String {
+        let formatter = NumberFormatter()
+        formatter.maximumFractionDigits = 5
+
+        return formatter.string(from: NSNumber(value: value)) ?? ""
+    }
+ }
 
 struct Kadai005View_Previews: PreviewProvider {
     static var previews: some View {

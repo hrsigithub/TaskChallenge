@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		690A153D25DCF2570042D10B /* Kadai006View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690A153C25DCF2570042D10B /* Kadai006View.swift */; };
 		6920C26D25DBA60D008CE3B9 /* Kadai005View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6920C26C25DBA60D008CE3B9 /* Kadai005View.swift */; };
 		6942BB8425D0D4570022C224 /* TaskChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6942BB8325D0D4570022C224 /* TaskChallengeApp.swift */; };
 		6942BB8625D0D4570022C224 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6942BB8525D0D4570022C224 /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		690A153C25DCF2570042D10B /* Kadai006View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai006View.swift; sourceTree = "<group>"; };
 		6920C26C25DBA60D008CE3B9 /* Kadai005View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai005View.swift; sourceTree = "<group>"; };
 		6942BB8025D0D4560022C224 /* TaskChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6942BB8325D0D4570022C224 /* TaskChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskChallengeApp.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				69AEAAB025D767220020F079 /* Kadai003View.swift */,
 				69B392DA25D80900007781E0 /* Kadai004View.swift */,
 				6920C26C25DBA60D008CE3B9 /* Kadai005View.swift */,
+				690A153C25DCF2570042D10B /* Kadai006View.swift */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			files = (
 				698C30D625D6372800D34462 /* Kadai002View.swift in Sources */,
 				69AEAAAE25D755BC0020F079 /* MenuView.swift in Sources */,
+				690A153D25DCF2570042D10B /* Kadai006View.swift in Sources */,
 				6942BB8625D0D4570022C224 /* ContentView.swift in Sources */,
 				698C30D925D6397B00D34462 /* InputView.swift in Sources */,
 				6942BB9525D0D49F0022C224 /* Kadai001View.swift in Sources */,
