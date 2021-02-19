@@ -9,11 +9,15 @@ import SwiftUI
 
 struct Kadai006View: View {
 
-    @State private var numSlider:Float = 50
-    @State private var isAlert = false
-    @State private var message = ""
+    @State private var numSlider: Float = 50
+    @State var random = Int.random(in: Self.answerRange)
+    @State private var errorAlert: AlertDetail?
 
-    @State var random = Int.random(in: 1..<101)
+    private static let answerRange = 1...100
+
+    private var sliderRange: ClosedRange<Float> {
+        Float(Self.answerRange.lowerBound)...Float(Self.answerRange.upperBound)
+    }
 
     var body: some View {
         VStack {
@@ -24,28 +28,25 @@ struct Kadai006View: View {
 
             HStack {
                 Text("1")
-                Slider(value: $numSlider, in: 1...100, step: 1.0)
+                Slider(value: $numSlider, in: sliderRange)
                 Text("100")
             }.padding()
 
             HStack {
+
                 Button("判定！") {
-                    isAlert = true
 
-                    if Int(numSlider) == random {
-                        message = "あたり！\nあなたの値: \(Int(numSlider))"
-                    } else {
-                        message = "はずれ！\nあなたの値: \(Int(numSlider))"
-                    }
+                    let firstLine = Int(numSlider) == random ? "あたり！" : "はずれ！"
+                    errorAlert = .init(message: "\(firstLine)\nあなたの値: \(Int(numSlider))")
 
-                }.alert(isPresented: $isAlert) {
+                }.alert(item: $errorAlert) { msg in
                     Alert(title: Text("結果"),
-                      message: Text(message),
-                      dismissButton: .default(Text("再挑戦"),
-                      action: {
-                        numSlider = 50
-                        random = Int.random(in: 1..<101)
-                      })
+                          message: Text(msg.message),
+                          dismissButton: .default(Text("再挑戦"),
+                                                  action: {
+                                                    numSlider = 50
+                                                    random = Int.random(in: Self.answerRange)
+                                                  })
                     )
                 }
             }

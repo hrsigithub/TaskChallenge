@@ -10,9 +10,8 @@ import SwiftUI
 struct Kadai005View: View {
 
     @State private var textArray = Array(repeating: "", count: 2)
-    @State private var isAlert = false
-    @State private var errorMessage = ""
     @State private var result: Float?
+    @State private var errorAlert: AlertDetail?
 
     var body: some View {
         VStack {
@@ -25,28 +24,28 @@ struct Kadai005View: View {
             HStack {
                 Button("計算") {
                     guard let num1 = Int(textArray[0]) else {
-                        isAlert = true
-                        errorMessage = "割られる数を入力してください。"
+                        errorAlert = .init(message: "割られる数を入力してください。")
                         return
                     }
 
                     guard let num2 = Int(textArray[1]) else {
-                        isAlert = true
-                        errorMessage = "割る数を入力してください。"
+                        errorAlert = .init(message: "割る数を入力してください。")
                         return
                     }
 
                     if num2 == 0 {
-                        isAlert = true
-                        errorMessage = "割る数には0を入力しないでください。"
+                        errorAlert = .init(message: "割る数には0を入力しないでください。")
                         return
                     }
+                    // errorAlert = .init(message: "OK")
 
                     result = Float(num1) / Float(num2)
 
-                }.alert(isPresented: $isAlert) {
+//                }.alert(isPresented: $isAlert) {
+                }.alert(item: $errorAlert) { error in
+                    // $errorAlertがnil以外でアラート表示
                     Alert(title: Text("課題5"),
-                          message: Text(errorMessage))
+                          message: Text(error.message))
                 }
             }.padding()
 

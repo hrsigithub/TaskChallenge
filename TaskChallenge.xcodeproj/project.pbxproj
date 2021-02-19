@@ -19,6 +19,8 @@
 		69AEAAAE25D755BC0020F079 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AEAAAD25D755BC0020F079 /* MenuView.swift */; };
 		69AEAAB125D767220020F079 /* Kadai003View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AEAAB025D767220020F079 /* Kadai003View.swift */; };
 		69B392DB25D80900007781E0 /* Kadai004View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B392DA25D80900007781E0 /* Kadai004View.swift */; };
+		69F4982325DDCE500039E43A /* AlertDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F4982225DDCE500039E43A /* AlertDetail.swift */; };
+		69F4984325DDEFBB0039E43A /* Kadai007View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F4984225DDEFBB0039E43A /* Kadai007View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		69AEAAAD25D755BC0020F079 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		69AEAAB025D767220020F079 /* Kadai003View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai003View.swift; sourceTree = "<group>"; };
 		69B392DA25D80900007781E0 /* Kadai004View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai004View.swift; sourceTree = "<group>"; };
+		69F4982225DDCE500039E43A /* AlertDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDetail.swift; sourceTree = "<group>"; };
+		69F4984225DDEFBB0039E43A /* Kadai007View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai007View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		69AEAAAC25D755250020F079 /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				69F4982225DDCE500039E43A /* AlertDetail.swift */,
 				698C30D825D6397B00D34462 /* InputView.swift */,
 				69AEAAAD25D755BC0020F079 /* MenuView.swift */,
 				6942BB9425D0D49F0022C224 /* Kadai001View.swift */,
@@ -97,6 +102,7 @@
 				69B392DA25D80900007781E0 /* Kadai004View.swift */,
 				6920C26C25DBA60D008CE3B9 /* Kadai005View.swift */,
 				690A153C25DCF2570042D10B /* Kadai006View.swift */,
+				69F4984225DDEFBB0039E43A /* Kadai007View.swift */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -197,8 +203,10 @@
 				6942BB8625D0D4570022C224 /* ContentView.swift in Sources */,
 				698C30D925D6397B00D34462 /* InputView.swift in Sources */,
 				6942BB9525D0D49F0022C224 /* Kadai001View.swift in Sources */,
+				69F4982325DDCE500039E43A /* AlertDetail.swift in Sources */,
 				69AEAAB125D767220020F079 /* Kadai003View.swift in Sources */,
 				69B392DB25D80900007781E0 /* Kadai004View.swift in Sources */,
+				69F4984325DDEFBB0039E43A /* Kadai007View.swift in Sources */,
 				6920C26D25DBA60D008CE3B9 /* Kadai005View.swift in Sources */,
 				6942BB8425D0D4570022C224 /* TaskChallengeApp.swift in Sources */,
 			);
