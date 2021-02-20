@@ -7,11 +7,15 @@
 
 import SwiftUI
 
+// let KadaiViews: [View] = [
+//    Kadai001View()
+// ]
+
 struct MenuView: View {
 
     var body: some View {
         NavigationView {
-            List(1..<8) { index in
+            List(1..<9) { index in
                 NavigationLink(destination: GetView(index: index)) {
                     Text("課題\(index)")
                 }
@@ -42,6 +46,8 @@ struct GetView: View {
             Kadai006View()
         case 7:
             Kadai007View()
+        case 8:
+            Kadai008View()
         default:
             Kadai001View()
 
