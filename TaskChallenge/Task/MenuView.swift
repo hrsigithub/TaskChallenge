@@ -15,7 +15,7 @@ struct MenuView: View {
 
     var body: some View {
         NavigationView {
-            List(1..<9) { index in
+            List(1..<11) { index in
                 NavigationLink(destination: GetView(index: index)) {
                     Text("課題\(index)")
                 }
@@ -48,6 +48,10 @@ struct GetView: View {
             Kadai007View()
         case 8:
             Kadai008View()
+        case 9:
+            Kadai009View()
+        case 10:
+            Kadai010View()
         default:
             Kadai001View()
 

@@ -12,7 +12,7 @@ struct InputView: View {
 
     var body: some View {
         TextField("", text: $text)
-//            .keyboardType(.decimalPad)
+            .keyboardType(.numberPad)
             .overlay(
                 RoundedRectangle(cornerRadius: 5)
                     .stroke(Color.black.opacity(0.5), lineWidth: 1)
