@@ -11,7 +11,6 @@ struct Kadai007View: View {
     @State private var selection = 0
 
     var body: some View {
-
         VStack {
             TabView(selection: $selection) {
                 CalculationView(color: Color.red, calculate: +)
@@ -30,7 +29,6 @@ struct Kadai007View: View {
 }
 
 struct CalculationView: View {
-
     @State private var textArray = Array(repeating: "", count: 2)
     @State private var result: Int?
 
@@ -43,7 +41,6 @@ struct CalculationView: View {
                 .edgesIgnoringSafeArea(.all)
 
             VStack {
-
                 Kadai007.InputView(text: $textArray[0])
                     .padding(10)
                 Kadai007.InputView(text: $textArray[1])

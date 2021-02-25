@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Kadai005View: View {
-
     @State private var textArray = Array(repeating: "", count: 2)
     @State private var result: Float?
     @State private var errorAlert: AlertDetail?

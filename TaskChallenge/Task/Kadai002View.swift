@@ -55,11 +55,9 @@ struct Kadai002View: View {
                 HStack {
                     Text(result)
                 }
-
             }
             Spacer()
         }
-
     }
 }
 

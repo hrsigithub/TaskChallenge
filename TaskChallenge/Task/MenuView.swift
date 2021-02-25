@@ -12,10 +12,9 @@ import SwiftUI
 // ]
 
 struct MenuView: View {
-
     var body: some View {
         NavigationView {
-            List(1..<11) { index in
+            List(1..<21) { index in
                 NavigationLink(destination: GetView(index: index)) {
                     Text("課題\(index)")
                 }
@@ -26,11 +25,9 @@ struct MenuView: View {
 }
 
 struct GetView: View {
-
     var index: Int = 0
 
     var body: some View {
-
         switch index {
         case 1:
             Kadai001View()
@@ -52,9 +49,14 @@ struct GetView: View {
             Kadai009View()
         case 10:
             Kadai010View()
+        case 11:
+            Kadai011View()
+        case 12:
+            Kadai012View()
+        case 13:
+            Kadai013View()
         default:
-            Kadai001View()
-
+            Text("まだ未完成")
         }
     }
 }

@@ -25,7 +25,6 @@ struct Kadai004View: View {
             }
 
             Spacer()
-
         }
     }
 }

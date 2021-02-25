@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct Kadai008View: View {
-
     @State private var selection = 0
     @State private var numSlider: Float = 0
 
     var body: some View {
-
         VStack {
             TabView(selection: $selection) {
                 SliderView(color: Color.red, numSlider: $numSlider)
@@ -32,7 +30,6 @@ struct Kadai008View: View {
 }
 
 struct SliderView: View {
-
     private static let sliderRange: ClosedRange<Float> = 0...1
 
     var color: Color

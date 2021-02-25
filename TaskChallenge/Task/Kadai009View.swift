@@ -18,7 +18,6 @@ struct Kadai009View: View {
                 Text(prefName ?? "未選択").font(.title3).padding()
                 Button("入力") {
                     isShowModal.toggle()
-
                 }.sheet(isPresented: $isShowModal
                 ) {
                     PrefecturesView(isShowModal: $isShowModal, selectPref: $prefName)
@@ -30,7 +29,6 @@ struct Kadai009View: View {
 }
 
 struct PrefecturesView: View {
-
     @State private var prefectureNames =
         ["東京都", "神奈川県", "埼玉県", "千葉県"]
 

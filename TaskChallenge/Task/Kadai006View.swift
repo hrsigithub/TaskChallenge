@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Kadai006View: View {
-
     @State private var numSlider: Float = 50
     @State var random = Int.random(in: Self.answerRange)
     @State private var errorAlert: AlertDetail?
@@ -33,12 +32,9 @@ struct Kadai006View: View {
             }.padding()
 
             HStack {
-
                 Button("判定！") {
-
                     let firstLine = Int(numSlider) == random ? "あたり！" : "はずれ！"
                     errorAlert = .init(message: "\(firstLine)\nあなたの値: \(Int(numSlider))")
-
                 }.alert(item: $errorAlert) { msg in
                     Alert(title: Text("結果"),
                           message: Text(msg.message),
@@ -54,7 +50,6 @@ struct Kadai006View: View {
             Spacer()
         }
     }
-
 }
 
 struct Kadai006View_Previews: PreviewProvider {
