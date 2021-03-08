@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Kadai002View: View {
-
     @State private var textArray = Array(repeating: "", count: 2)
 
     @State private var selection = 0

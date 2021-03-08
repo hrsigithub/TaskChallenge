@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Kadai010View: View {
-
     private let cellColors = [
         Color(red: 0.852, green: 0.948, blue: 0.75, opacity: 1.0),
         Color(red: 0.705, green: 0.851, blue: 0.896, opacity: 1.0),

@@ -7,18 +7,12 @@
 
 import SwiftUI
 
-struct Task: Identifiable {
-    var id = UUID()
-    var fruitsName: String
-    var isDone: Bool
-}
-
 struct Kadai013View: View {
     private var tasks: [Task] = [
-        .init(fruitsName: "りんご", isDone: false),
-        .init(fruitsName: "みかん", isDone: true),
-        .init(fruitsName: "バナナ", isDone: false),
-        .init(fruitsName: "パイナップル", isDone: true)
+        .init(name: "りんご", isDone: false),
+        .init(name: "みかん", isDone: true),
+        .init(name: "バナナ", isDone: false),
+        .init(name: "パイナップル", isDone: true)
   ]
 
     var body: some View {
@@ -27,7 +21,7 @@ struct Kadai013View: View {
                 ForEach(tasks) { task in
                     HStack {
                         CheckView(isDone: task.isDone)
-                        Text(task.fruitsName)
+                        Text(task.name)
                         Spacer()
                     }
                 }

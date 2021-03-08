@@ -55,6 +55,10 @@ struct GetView: View {
             Kadai012View()
         case 13:
             Kadai013View()
+        case 14:
+            Kadai014View()
+        case 15:
+            Kadai015View()
         default:
             Text("まだ未完成")
         }
